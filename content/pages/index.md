@@ -15,6 +15,9 @@ sections:
         url: 'https://docs.stackbit.com/'
         theme: secondary
   - type: CardGridSection
+    heading: Card Grid Heading
+    subheading: Card Grid Subheading
+  - type: CardGridSection
     heading: Jump to Topic
     subheading: |
       Or jump right to a specific topic to help you build your site.
