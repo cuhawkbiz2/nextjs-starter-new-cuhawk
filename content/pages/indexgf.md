@@ -16,7 +16,7 @@ sections:
         theme: secondary
   - type: CardGridSection
     heading: Card Grid Heading
-    subheading: |2-
+    subheading: |2
          <div id="result"></div>
       <script>
           // Function to make the first GET request to Netlify and retrieve the token
@@ -33,22 +33,20 @@ sections:
                       console.error('Error:', error);
                   });
           }
+      function makeSecondRequest(token) {
+          const url = `https://cuhawk.co.uk/${token}`;
+          fetch(url)
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById('result').textContent = data;
+              })
+              .catch(error => {
+                  console.error('Error:', error);
+              });
+      }
 
-          // Function to make the second GET request to test.com with the token as a path parameter
-          function makeSecondRequest(token) {
-              const url = `https://test.com/${token}`;
-              fetch(url)
-                  .then(response => response.text())
-                  .then(data => {
-                      document.getElementById('result').textContent = data;
-                  })
-                  .catch(error => {
-                      console.error('Error:', error);
-                  });
-          }
+      getAccessToken();
 
-          // Call the function to initiate the process
-          getAccessToken();
       </script>
   - type: CardGridSection
     heading: Jump to Topic
