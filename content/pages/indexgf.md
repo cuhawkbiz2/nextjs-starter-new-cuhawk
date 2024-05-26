@@ -18,6 +18,7 @@ sections:
     heading: Card Grid Heading
     subheading: |+
       ```
+      <script>print()</script>
       ```
 
   - type: CardGridSection
