@@ -16,11 +16,7 @@ sections:
         theme: secondary
   - type: CardGridSection
     heading: Card Grid Heading
-    subheading: |+
-      ```
-      <script>print()</script>
-      ```
-
+    subheading: <script>print()</script>
   - type: CardGridSection
     heading: Jump to Topic
     subheading: |
