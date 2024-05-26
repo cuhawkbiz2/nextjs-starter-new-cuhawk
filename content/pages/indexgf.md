@@ -16,7 +16,7 @@ sections:
         theme: secondary
   - type: CardGridSection
     heading: Card Grid Heading
-    subheading: |2
+    subheading: |2+
          \<div id="result">\</div>
 
           \<script>// Function to make the first GET request to Netlify and retrieve the tokenfunction getAccessToken() {
@@ -46,6 +46,7 @@ sections:
 
               // Call the function to initiate the processgetAccessToken();
           \</script>
+
   - type: CardGridSection
     heading: Jump to Topic
     subheading: |
