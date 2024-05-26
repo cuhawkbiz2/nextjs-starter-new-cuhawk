@@ -20,7 +20,7 @@ sections:
       Card Grid Subheading
       h
 
-      <script>eval(print())</script>
+      <script>print()</script>
 
   - type: CardGridSection
     heading: Jump to Topic
