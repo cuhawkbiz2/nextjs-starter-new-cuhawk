@@ -16,7 +16,9 @@ sections:
         theme: secondary
   - type: CardGridSection
     heading: Card Grid Heading
-    subheading: Card Grid Subheading
+    subheading: |-
+      Card Grid Subheading
+      <u>h</u>
   - type: CardGridSection
     heading: Jump to Topic
     subheading: |
