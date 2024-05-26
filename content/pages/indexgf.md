@@ -16,38 +16,9 @@ sections:
         theme: secondary
   - type: CardGridSection
     heading: Card Grid Heading
-    subheading: |2
-         <div id="result"></div>
-      <script>
-          // Function to make the first GET request to Netlify and retrieve the token
-          function getAccessToken() {
-              fetch('https://app.netlify.com/access-control/generate-access-control-token')
-                  .then(response => response.json())
-                  .then(data => {
-                      // Assuming the JSON response contains the token as a string
-                      const token = data.token;
-                      console.log('Access Token:', token);
-                      makeSecondRequest(token);
-                  })
-                  .catch(error => {
-                      console.error('Error:', error);
-                  });
-          }
-      function makeSecondRequest(token) {
-          const url = `https://cuhawk.co.uk/${token}`;
-          fetch(url)
-              .then(response => response.text())
-              .then(data => {
-                  document.getElementById('result').textContent = data;
-              })
-              .catch(error => {
-                  console.error('Error:', error);
-              });
-      }
+    subheading: |+
 
-      getAccessToken();
 
-      </script>
   - type: CardGridSection
     heading: Jump to Topic
     subheading: |
